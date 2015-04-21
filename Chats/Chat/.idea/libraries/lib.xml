@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="lib" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://C:/Program Files (x86)/Apache Software Foundation/CouchDB/lib" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://C:/Program Files (x86)/Apache Software Foundation/CouchDB/lib" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

@@ -1,6 +1,55 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+   background: whitesmoke;
+}
+
+.text{
+    border-radius: 5px;
+    border: 0px none;
+    background: lightgrey;
+    height: 40px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
+
+.button{
+    border-radius: 5px;
+    border: 0px none;
+    height: 40px;
+    background: cornflowerblue;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
+
+span{
+    padding: 0px 5px;
+    margin: 0px 10px;
+}
+
+span.sender{
+    font-weight: 600;
+}
+
+.messageZone
+{
+    width: 80%;
+    text-align: center;
+    left: 0; right: 0;
+    margin: 20px auto;
+}
+
+.message{
+    margin: 2px 0;
+}
+
+.statisticArea{
+    display: block;
+    border-radius: 5px;
+    margin:auto;
+    width: 80%;
+    text-align: center;
+    left: 0; right: 0;
+    position: absolute;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
 }
 
 a {

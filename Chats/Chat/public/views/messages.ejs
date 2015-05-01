@@ -1,6 +1,6 @@
 <% for(var i=messages.rows.length-1; i>=0; i--) {%>
     <div class="message" date="<%= messages.rows[i].value.d.date %>" >
-        <span><%= messages.rows[i].value.d.login %></span>
+        <span class="sender"><%= messages.rows[i].value.d.login %></span>
         <span><%= messages.rows[i].value.d.message %></span>
     </div>
 <% } %>

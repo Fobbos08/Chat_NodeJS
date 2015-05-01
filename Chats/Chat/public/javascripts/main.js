@@ -2,7 +2,7 @@
  * Created by Эмиль on 20.04.2015.
  */
 setTimeout(update,1000);
-
+setInterval(getCounter, 1000);
 
 $(document).ready(function() {
     $('#messageForm').bind('submit', function(e){
@@ -49,5 +49,23 @@ function update(){
             }
         });
         setTimeout(update,1000);
+    });
+}
+
+function getCounter()
+{
+    $.ajax({
+        url: "http://localhost:3000/publiccounter",
+        data: {
+            //date: lastDate
+        },
+        dataType: 'json',
+        type: "get",
+        success: function (data) {
+            $("#count").html(data.count);
+        },
+        error: function (data) {
+            alert("error");
+        }
     });
 }

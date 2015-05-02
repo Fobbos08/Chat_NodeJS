@@ -40,7 +40,7 @@ function update(){
             success: function (data) {
                 var date2 = new Date();
                 var time2 = date2.getTime();
-                $("#time").html(time2-time);
+                $("#timeWithDB").html(time2-time);
                 var insertHtml = func(data);
                 $('.messages').html(insertHtml);
             },
@@ -54,6 +54,8 @@ function update(){
 
 function getCounter()
 {
+    var date = new Date();
+    var time = date.getTime();
     $.ajax({
         url: "http://localhost:3000/publiccounter",
         data: {
@@ -62,6 +64,9 @@ function getCounter()
         dataType: 'json',
         type: "get",
         success: function (data) {
+            var date2 = new Date();
+            var time2 = date2.getTime();
+            $("#time").html(time2-time);
             $("#count").html(data.count);
         },
         error: function (data) {
